@@ -53,6 +53,10 @@ public class FacilitiesHandler {
                 if(allCovenantsMatched){
                     facility.setAmount(facility.getAmount().subtract(loan.getAmount()));
                     assignment.setFacilityId(facility.getId());
+                    assignment.setAmount(loan.getAmount());
+                    assignment.setDefaultLikelihood(loan.getDefaultLikelihood());
+                    assignment.setLoanInterestRate(loan.getInterestRate());
+                    assignment.setFacilityInterestRate(facility.getInterestRate());
                     break;
                 }
             }
