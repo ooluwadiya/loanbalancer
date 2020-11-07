@@ -14,7 +14,7 @@ public class Facility {
     private BigDecimal amount;
 
     @CsvBindByName(column = "interest_rate")
-    private double interestRate;
+    private float interestRate;
 
     @CsvBindByName(column = "id")
     private int id;
