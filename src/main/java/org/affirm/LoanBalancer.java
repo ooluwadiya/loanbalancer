@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class LoanBalancer {
 
     public static void main(String[] args){
-        String fileSize = "small";
+        String fileSize = "large";
         FacilitiesHandler facilitiesHandler = new FacilitiesHandler(fileSize);
         LoansHandler loansHandler = new LoansHandler(fileSize);
 
